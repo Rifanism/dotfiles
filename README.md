@@ -1,5 +1,9 @@
 # My BSPWM Dotfiles
 
+## Preview
+![home](public/image1.png)
+![terminal](public/image2.png)
+
 ## Requirements
 - Alacritty
 - Dunst
