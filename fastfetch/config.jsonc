@@ -1,49 +1,50 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "source": "Fedora",
+    "source": "Arch",
     "padding": {
       "top": 2,
       "left": 2
     },
+    "color": {"1": "blue", "2": "blue"}
   },
   "display": {
     "separator": " ❯ "
   },
   "modules": [
     "break",
-    { "type": "custom", "format": "╭────────────────────── USER ──────────────────────╮"},
+    { "type": "custom", "format": "╭──────────────────── USER ────────────────────╮"},
     {
       "type": "title",
       "key": " USR",
       "color": { "user": "green", "at": "white", "host": "blue" },
       "keyColor": "magenta"
     },
-    { "type": "custom", "format": "╰──────────────────────────────────────────────────╯"},
+    { "type": "custom", "format": "╰──────────────────────────────────────────────╯"},
     "break",
 
     // --- SOFTWARE SECTION ---
-    { "type": "custom", "format": "╭──────────────────── SOFTWARE ────────────────────╮"},
-    { "type": "os", "key": "󰣛 OS ", "keyColor": "cyan", "format": "{3}" },
+    { "type": "custom", "format": "╭────────────────── SOFTWARE ──────────────────╮"},
+    { "type": "os", "key": " OS ", "keyColor": "cyan", "format": "{3}" },
     { "type": "kernel", "key": "󰒋 KER", "keyColor": "cyan" },
-    { "type": "packages", "key": "󰏗 PKG", "keyColor": "cyan", },
-    { "type": "shell", "key": "󰞷 SHL", "keyColor": "cyan" },
+    { "type": "packages", "key": "󰏗 PKG", "keyColor": "cyan" },
+    { "type": "shell", "key": "󰞷 SHL", "keyColor": "cyan", "format": "{1}" },
     { "type": "terminal", "key": "󰆍 TER", "keyColor": "cyan", "format": "{1}" },
     { "type": "de", "key": "󰧨 DE ", "keyColor": "cyan", "format": "{1}" },
-    { "type": "wm", "key": "󱂬 WM ", "keyColor": "cyan", "format": "{3}" },
-    { "type": "custom", "format": "╰──────────────────────────────────────────────────╯"},
+    { "type": "wm", "key": "󱂬 WM ", "keyColor": "cyan", "format": "{1}" },
+    { "type": "custom", "format": "╰──────────────────────────────────────────────╯"},
 
     "break",
 
     // --- HARDWARE SECTION ---
-    { "type": "custom", "format": "╭──────────────────── HARDWARE ────────────────────╮"},
-    { "type": "host", "key": "󰌢 HST", "keyColor": "yellow", "format": "{2}" },
+    { "type": "custom", "format": "╭────────────────── HARDWARE ──────────────────╮"},
+    { "type": "host", "key": "󰌢 HST", "keyColor": "yellow", "format": "{1}" },
     { "type": "cpu", "key": "󰻠 CPU", "keyColor": "yellow", "format": "{1}" },
     { "type": "gpu", "key": "󰢮 GPU", "keyColor": "yellow", "format":"{2}" },
     { "type": "memory", "key": "󰍛 RAM", "keyColor": "yellow" },
     { "type": "disk", "key": "󰋊 DSK", "keyColor": "yellow", "format": "{1} / {2} ({3})" },
     { "type": "uptime", "key": "󱎫 UPT", "keyColor": "yellow" },
-    { "type": "custom", "format": "╰──────────────────────────────────────────────────╯"},
+    { "type": "custom", "format": "╰──────────────────────────────────────────────╯"},
 
     "break",
     
