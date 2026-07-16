@@ -23,7 +23,7 @@ git clone https://github.com/Rifanism/doftiles
 ```bash
 cp ~/dotfiles/* ~/.config
 ```
-## Make ~/.xinitrc
+### Make ~/.xinitrc
 ```bash
 sxhkd &
 exec bspwm
@@ -31,6 +31,8 @@ exec bspwm
 ### Run
 ```bash
 super + alt + r (bspwm)
+or
+reboot
 ```
 
 ## Structure
